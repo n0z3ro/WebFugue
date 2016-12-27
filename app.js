@@ -1,14 +1,10 @@
-// include the http module
-var http = require('http');
+var express = require('express')
+var app = express()
 
-// create a webserver
-http.createServer(function (req, res) {
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
 
-    // respond to any incoming http request
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-
-}).listen(1337, '127.0.0.1');
-
-// log what that we started listening on localhost:1337
-console.log('Server running at 127.0.0.1:1337');
+app.listen(1337, function () {
+  console.log('Listening on port 1337!')
+})

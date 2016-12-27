@@ -11,5 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "n0z3ro",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0z3ro/WebFugue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n0z3ro/WebFugue/issues"
+  },
+  "homepage": "https://github.com/n0z3ro/WebFugue#readme"
 }
